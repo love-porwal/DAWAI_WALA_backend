@@ -2,12 +2,12 @@ const express=require("express");
 
 const cors = require("cors");
 
-const connect = require("./confige/db");
+const connect = require("./src/confige/db");
 
-const productController=require("./controllers/product.controller");
-const addressController=require("./controllers/address.controller");
-const { register, login } = require("./controllers/user.controller");
-const User=require("./models/user.model");
+const productController=require("./src/controllers/product.controller");
+const addressController=require("./src/controllers/address.controller");
+const { register, login } = require("./src/controllers/user.controller");
+const User=require("./src/models/user.model");
 
 const app = express();
 
